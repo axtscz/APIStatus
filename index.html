@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>INTRAKIT Status</title>
+        <script src="https://use.fontawesome.com/d02fcee7fa.js"></script>
+    </head>
+    <body ng-app="APIStatus">
+        <div ng-controller="APIStatus" class="container">
+            <h1 class="centered">INTRAKIT Status</h1>
+            <div class="">
+                <h2>
+                    <i class="fa fa-circle" aria-hidden="true" ng-class="{red: libraryStatus != 200, green: libraryStatus == 200}"></i>
+                    INTRAKIT API
+                </h2>
+            </div>
+            <span class="small">Last Updated
+                {{lastUpdate | date : "medium"}}</span>
+            <br>
+            <span class="small">{{tries}}/{{fails}}</span>
+            <p>Status Code:
+                {{libraryStatus}}</p>
+            <p>Response Time:
+                {{timeTake | number : 2}}</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </body>
+</html>

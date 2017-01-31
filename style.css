@@ -1,0 +1,30 @@
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+body {
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.red {
+    /*background-color: rgb(255, 0, 0);*/
+    color: rgb(255, 0, 0);
+}
+
+.green {
+    /*background-color: rgb(42, 187, 42);*/
+    color: rgb(42, 187, 42);
+}
+
+.small {
+    font-size: 75%;
+    color: grey;
+}
+
+
+}
