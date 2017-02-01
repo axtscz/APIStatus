@@ -20,6 +20,10 @@ app.controller("APIStatus", function($scope, $interval) {
                 console.log(performance.now() - start);
                 $scope.timeTake = performance.now() - start;
                 $scope.lastUpdate = new Date();
+                console.log($scope.lastUpdate.getHours());
+                if ($scope.lastUpdate > 17) {
+                    $scope.nighttime = true;
+                }
                 $scope.tries++;
             });
     };
